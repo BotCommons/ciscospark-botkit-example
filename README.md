@@ -2,8 +2,8 @@
 
 The code for the bot has been built from the [Pluggable branch of the Botkit template](https://github.com/CiscoDevNet/botkit-template/tree/plugin) provided by Cisco DevNet.
 
-For demo purpose, a live version of the bot is deployed on Heroku via Free Dynos (leave a few seconds for the bot to wake up). 
-Simply add `BotCommonsDemo` to see the example at work. 
+For demo purpose, a live version of the bot is deployed on Heroku via Free Dynos (leave a few seconds for the bot to wake up).
+Simply add `BotCommonsDemo@sparkbot.io` to a Cisco Spark space to see the bot at work. 
 
 
 ## Botkit template (pluggable architecture)
