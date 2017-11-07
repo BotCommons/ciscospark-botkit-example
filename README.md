@@ -1,4 +1,12 @@
-# Botkit Template for Cisco Spark
+# BotCommons example for Cisco Spark built with Botkit
+
+The code for the bot has been built from the [Pluggable branch of the Botkit template](https://github.com/CiscoDevNet/botkit-template/tree/plugin) provided by Cisco DevNet.
+
+For demo purpose, a live version of the bot is deployed on Heroku via Free Dynos (leave a few seconds for the bot to wake up).
+Simply add `BotCommonsDemo@sparkbot.io` to a Cisco Spark space to see the bot at work. 
+
+
+## Botkit template (pluggable architecture)
 
 This template regroups a set of best practices to bootstrap a Botkit project connecting to Cisco Spark.
 
@@ -9,9 +17,13 @@ This template regroups a set of best practices to bootstrap a Botkit project con
 
 ## Features
 
-- configuration: pass settings either through environment variables on the command line, or hard-coded values in the `.env` file. Note that command line variables are priorized over the `.env` file if present in both places.
+- plugable architecture: as Botkit launches, several directories are loaded to customize your bot, in the order below:
+   1. configurations: add complex configuration settings that get activated from env variables
+   2. extensions: add extra utility function to the bot object
+   3. plugins: add extra routes/middlewares to your bot
+   4. skills: organize your bot behaviours by placing 'commands', 'conversations' and 'events' in the [skills directory](skills/README.md).
 
-- skills: organize your bot behaviours by placing 'commands', 'conversations' and 'events' in the [skills directory](skills/README.md).
+- configuration: pass settings either through environment variables on the command line, or hard-coded values in the `.env` file. Note that command line variables are priorized over the `.env` file if present in both places.
 
 - user experience: the template comes ready-to-use skills: a 'welcome' invite, as well as 'help' and 'fallback' commands.
 
@@ -21,7 +33,7 @@ This template regroups a set of best practices to bootstrap a Botkit project con
 
 - mentions: the appendMention utility function helps Spark users remind to mention the bot in Group spaces.
 
-- popular cloud providers: the bot self-configures when run on Glitch and Heroku (if )
+- popular cloud providers: the bot self-configures when run on Glitch and Heroku (if dyno metadata have been enabled via the Heroku CLI)
 
 
 ## Quick start on Glitch
@@ -73,24 +85,24 @@ you can run this template in a snatch.
 
 4. You're ready to run your bot
 
-    From a bash shell:
+    From a bash shell (Mac, Linux or Windows bash):
 
     ```shell
-    git clone https://github.com/CiscoDevNet/botkit-template
-    cd botkit-template
+    git clone https://github.com/BotCommons/ciscospark-botkit-example
+    cd ciscospark-botkit-example
     npm install
     SPARK_TOKEN=0123456789abcdef PUBLIC_URL=https://abcdef.ngrok.io node bot.js
     ```
 
-    From a windows shell:
+    From a Windows Command shell:
 
     ```shell
-    > git clone https://github.com/CiscoDevNet/botkit-template
-    > cd botkit-template
-    > npm install
-    > set SPARK_TOKEN=0123456789abcdef
-    > set PUBLIC_URL=https://abcdef.ngrok.io
-    > node bot.js
+    git clone https://github.com/BotCommons/ciscospark-botkit-example
+    cd ciscospark-botkit-example
+    npm install
+    set SPARK_TOKEN=0123456789abcdef
+    set PUBLIC_URL=https://abcdef.ngrok.io
+    node bot.js
     ```
 
     where:

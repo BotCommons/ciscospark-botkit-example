@@ -1,6 +1,6 @@
 {
-  "description": "Botkit template for Cisco Spark",
-  "version": "0.6.0",
+  "description": "BotCommons example for Cisco Spark built with Botkit",
+  "version": "0.1.0",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
@@ -13,11 +13,14 @@
   "author": "Stève Sfartz (Cisco DevNet) <stsfartz@cisco.com>",
   "license": "MIT",
   "dependencies": {
-    "botkit": "0.6.0",
+    "botkit": "0.6.6",
+    "ciscospark": "1.18.0",
+    "botkit-storage-redis": "1.1.0",
+    "json-format": "1.0.1",
     "node-env-file": "0.1.8"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/CiscoDevNet/botkit-template.git"
+    "url": "https://github.com/BotCommons/ciscospark-botkit-example"
   }
 }
