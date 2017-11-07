@@ -5,7 +5,7 @@ The code for the bot has been built from the ['plugin' architecture branch of th
 For demo purpose, a live version of the bot is deployed on Heroku via Free Dynos (leave a few seconds for the bot to wake up):
 - reach to the [public BotCommons endpoint](https://botcommons-ciscospark-sample.herokuapp.com/botcommons) of this demo bot
 - add `BotCommonsDemo@sparkbot.io` to a Cisco Spark space to see the [about](docs/about-command.png) and [.commons](docs/botcommons-command.png) commands at work
-- you can also quickly deploy your own version of the bot, check [Glich instructions](#quick-start-on-glitch) below._
+- you can also quickly deploy your own version of the bot, check [Glitch instructions](#quick-start-on-glitch) below.
 
 
 ## Botkit template (pluggable architecture)
