@@ -38,7 +38,7 @@ This template regroups a set of best practices to bootstrap a Botkit project con
 
 ## Quick start on Glitch
 
-Click [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/CiscoDevNet/botkit-template)
+Click [![Remix on Glitch](https://cdn.glitch.com/2703baf2-b643-4da7-ab91-7ee2a2d00b5b%2Fremix-button.svg)](https://glitch.com/edit/#!/import/github/BotCommons/ciscospark-botkit-example)
 
 Then open the `.env` file and paste your bot's token into the SPARK_TOKEN variable.
 

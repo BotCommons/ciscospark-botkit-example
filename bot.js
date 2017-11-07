@@ -56,7 +56,7 @@ var Botkit = require('botkit');
 var env = process.env.NODE_ENV || "development";
 
 var configuration = {
-    public_address: process.env.PUBLIC_URL,
+    public_address: public_url,
     ciscospark_access_token: process.env.SPARK_TOKEN,
     secret: process.env.SECRET, // this is a RECOMMENDED security setting that checks if incoming payloads originate from Cisco Spark
     webhook_name: process.env.WEBHOOK_NAME || ('built with BotKit (' + env + ')')
