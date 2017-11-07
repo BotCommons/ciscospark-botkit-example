@@ -14,7 +14,9 @@
   "license": "MIT",
   "dependencies": {
     "botkit": "0.6.6",
+    "ciscospark": "1.18.0",
     "botkit-storage-redis": "1.1.0",
+    "json-format": "1.0.1",
     "node-env-file": "0.1.8"
   },
   "repository": {
