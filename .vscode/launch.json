@@ -9,8 +9,7 @@
             "envFile": "${workspaceRoot}/.env",
             "env": {
                 "SPARK_TOKEN": "PLACE_YOUR_BOT_TOKEN_HERE_FOR_DEBUG_PURPOSE",
-                "PUBLIC_URL": "https://718670a3.ngrok.io",
-                "REDIS_URL": "redis://127.0.0.1:6379"
+                "PUBLIC_URL": "https://718670a3.ngrok.io"
             }
         }
     ]

@@ -10,32 +10,37 @@ module.exports = function (controller, bot) {
 
     //
     // OVERRIDE WITH YOUR BOT INFORMATION
+    // Check the BotCommons specifications for more information: https://github.com/BotCommons/BotCommons-Specification
     //
     var botcommons = {
 
         // Bot description
-        "description": "It's an awesome bot for sure!",
+        "description": "Example of a `Cisco Spark` bot, implemented with **Botkit**, and conforming to the [BotCommons specifications](https://github.com/BotCommons/BotCommons-Specification).",
 
         // Where to get more information about the bot
-        "url": "https://github.com/CiscoDevNet/botkit-template",
+        "url": "https://github.com/BotCommons/ciscospark-botkit-example",
+
+        // Version of the bot from a user perspective (in terms of features)
+        "version" : "0.1.0",
 
         // Legal owner
-        "legal-owner": "Cisco DevNet <https://developer.cisco.com>",
+        "owner": "Cisco DevNet <https://developer.cisco.com>",
 
         // Contact name for support
-        "support-contact": "Stève Sfartz <mailto:stsfartz@cisco.com>",
+        "contact": "Stève Sfartz <mailto:stsfartz@cisco.com>",
 
         // Messaging platform
-        "plaform": bot.type,
+        // note that a bot.type variable is exposed by Botkit
+        "plaform": "ciscospark",
 
-        // the precise bot identity is loaded asynchronously, as /people/me request - issued by "BotKit CiscoSparkBot.js" - returns
+        // the precise bot identity is loaded asynchronously, as /people/me request - issued by "Botkit CiscoSparkBot.js" - returns
         "identity": "unknown",
 
         // Endpoint where to check the bot is alive
         "healthcheck": "https://" + controller.config.public_address + process.env.HEALTHCHECK_ROUTE,
 
         // BotCommons specifications version (should be an href)
-        "botcommons": "draft",
+        "botcommons": "https://github.com/BotCommons/BotCommons-Specification/releases/0.1.0",
     }
 
     // Making metadata accessible from skills
