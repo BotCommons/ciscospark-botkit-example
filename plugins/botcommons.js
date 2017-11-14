@@ -3,9 +3,9 @@
 // Licensed under the MIT License 
 //
 
-//
-// Adds meta information about the bot, and exposes them at a public endpoint 
-//
+/**
+ * Adds meta information about the bot, and exposes them at a public endpoint 
+ */
 module.exports = function (controller, bot) {
 
     //

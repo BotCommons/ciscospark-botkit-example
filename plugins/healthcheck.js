@@ -3,10 +3,10 @@
 // Licensed under the MIT License 
 //
 
-//
-// Goal of the Healthcheck is to return a 200 OK payload
-// It also displays extra technical information to ease troubleshooting 
-//
+/**
+ *  Goal of the Healthcheck is to return a 200 OK payload
+ * It also displays extra technical information to ease troubleshooting 
+ */
 module.exports = function (controller, bot) {
 
     var healthcheck = {

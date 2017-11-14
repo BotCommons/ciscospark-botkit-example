@@ -7,6 +7,7 @@ module.exports = function (controller) {
         var text = "Here are my skills:";
         text += "\n- " + bot.appendMention(message, "color") + ": ask to pick a random color";
         text += "\n- " + bot.appendMention(message, "quiz") + ": check your maths, answer under 5 seconds";
+        
         text += "\n- " + bot.appendMention(message, "restricted") + ": let a user pick a color among a set of options";
         text += "\n- " + bot.appendMention(message, "storage") + ": store picked color as a user preference";
         text += "\n- " + bot.appendMention(message, "threads") + ": branch to another thread";

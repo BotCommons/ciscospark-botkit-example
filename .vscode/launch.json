@@ -4,12 +4,26 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Launch",
             "program": "${workspaceRoot}/bot.js",
             "envFile": "${workspaceRoot}/.env",
             "env": {
-                "SPARK_TOKEN": "PLACE_YOUR_BOT_TOKEN_HERE_FOR_DEBUG_PURPOSE",
-                "PUBLIC_URL": "https://718670a3.ngrok.io"
+                "SPARK_TOKEN": "PLACE_YOUR_BOT_ACCESS_TOKEN",
+                "PUBLIC_URL": "https://3603eff2.ngrok.io",
+                "DEBUG": "starterkit*"
+            }
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Maze Skill",
+            "program": "${workspaceRoot}/bot.js",
+            "envFile": "${workspaceRoot}/.env",
+            "env": {
+                "SPARK_TOKEN": "ZTZiMGJjNzItZTEwNy00NThkLTkzZTEtYmNkYjQzYTY1ZWNhZjQ5NDg1NDItYjk1",
+                "PUBLIC_URL": "https://3603eff2.ngrok.io",
+                "RECAST_TOKEN": "25848725978fea50d64c7eba9e998f4d",
+                "DEBUG": "starterkit*,maze*"
             }
         }
     ]
